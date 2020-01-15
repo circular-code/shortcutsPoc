@@ -9,9 +9,7 @@
     "default_title": "Short Cuts Extension"
   },
   "icons": {
-    "16": "shortcuts_16.png",
-    "48": "shortcuts_48.png",
-    "128": "shortcuts_128.png"
+    "16": "shortcuts_16.png"
   },
   "background": {
     "scripts": ["background.js"]
@@ -23,6 +21,7 @@
     {
       "matches": ["https://www.crunchbase.com/*"],
       "js":["jquery-3.3.1.min.js", "script.js"],
+      "css":["shortcuts.css"],
       "run_at": "document_end"
     }
   ]
