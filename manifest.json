@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+  "name": "Short Cuts Alpha v0.1",
+  "description": "This extension enables shortcuts and quick navigation for pages withouth.",
+  "version": "0.1",
+  "browser_action": {
+    "default_icon": "shortcuts_16.png",
+    "default_popup": "popup.html",
+    "default_title": "Short Cuts Extension"
+  },
+  "icons": {
+    "16": "shortcuts_16.png",
+    "48": "shortcuts_48.png",
+    "128": "shortcuts_128.png"
+  },
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://www.crunchbase.com/*"],
+      "js":["jquery-3.3.1.min.js", "script.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
