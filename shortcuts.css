@@ -1,9 +1,24 @@
-#test {
-    background: red;
+#shortcutsInterface {
     position: fixed;
-    top: 0;
     left: calc(50% - 200px);
-    width: 400px;
-    height: 20px;
     z-index: 2147483647;
+    background: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    box-shadow: 5px 5px 28px 9px rgba(0,0,0,0.5);
+    width: 420px;
+    font-family: monospace;
+}
+
+#shortcutsInterface input {
+    padding: 5px 10px;
+    width: calc(100% - 20px);
+    background: transparent;
+    border: navajowhite;
+    color: lightblue;
+    background: rgba(0, 208, 255, 0.15);
+    font-family: monospace;
+}
+
+#shortcutsSuggestions p {
+    color: white;
 }
