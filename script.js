@@ -98,6 +98,7 @@ ext.com.search = function(value, execute) {
         $(search).submit();
         $(search).closest('form').submit();
         // $(search).enter
+        //TODO: hier weitermachen
     }
 };
 
