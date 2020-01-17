@@ -89,8 +89,10 @@ ext.com.search = function(value, execute) {
         $(search).focus();
     }
 
-    if (execute)
+    if (execute) {
+        search.click();
         search.dispatchEvent(new Event('input'));
+    }
 };
 
 ext.fn.showSuggestions = function(searchStr) {
