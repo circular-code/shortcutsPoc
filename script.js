@@ -134,14 +134,14 @@ ext.fn.emptySuggestions = function() {
 };
 
 document.body.addEventListener('keydown', function(e) {
-    if (event.keyCode === 17) {
+    if (eval.keyCode === 17) {
         ext.flags.shiftPressed = true;
 
         if (ext.flags.spacePressed === true)
             ext.fn.showInterface();
     }
 
-    if (event.keyCode === 32) {
+    if (e.keyCode === 32) {
         ext.flags.spacePressed = true;
 
         if (ext.flags.shiftPressed === true)
