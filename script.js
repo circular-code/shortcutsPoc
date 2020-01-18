@@ -134,7 +134,7 @@ ext.fn.emptySuggestions = function() {
 };
 
 document.body.addEventListener('keydown', function(e) {
-    if (eval.keyCode === 17) {
+    if (e.keyCode === 17) {
         ext.flags.shiftPressed = true;
 
         if (ext.flags.spacePressed === true)
